@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e621eabb9.js" crossorigin="anonymous"></script>
+    <title>Captain Travel</title>
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="brand">
+            <img src="imgs/captain-america.png" />
+            <h3>Marvel Tips</h3>
+        </div>
+        <nav>
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="form-container">
+            <form class="search-form">
+                <input type="text" name="search-bar" placeholder="Search locations...">
+                <button class="search-btn">Search</button>
+            </form>
+            <div class="curr-location-container">
+                <h1>Current Location: <span class="curr-loc"></span></h1>
+                <button class="copy-btn">Copy to clipboard</button>
+            </div>
+        </div>
+        <section class="map-section">
+            <section class="weather-container"></section>
+            <section class="map-container" id="map" style="width: 800px; height: 400px;">
+            </section>
+            <img src="imgs/logo.png" class="loc-btn" />
+        </section>
+        <div class="info-container">
+            <section class="locations"></section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <small>
+            <img src="imgs/stickers/14.png" />
+            All rights reserved to NinjaCoders &copy;
+        </small>
+    </footer>
+
+    <script src="js/lib/swal.js"></script>
+    <script src="js/lib/axios.js"></script>
+    <script type="module" src="js/page-controller.js"></script>
+</body>
+
+</html>
